@@ -1,3 +1,87 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  width: 104rem;
+  place-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin: 5rem 0 10rem;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #353535;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+nav a:focus {
+  font-weight: bold;
+  color: #E1E1E6;
+}
+
 .home {
   background-image: url(./assets/image1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home button {
+  border-radius: .5rem;
+  padding: 2rem 4rem;
+  background: none;
+  border: 2px solid #E1E1E6;
+  max-width: 20rem;
+}
+
+.home a {
+  text-decoration: none;
+  color: #E1E1E6;
+}
+
+.universe {
+  background-image: url(./assets/image2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  color: #E1E1E6;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+p {
+  color: #E1E1E6;
+  width: 63.6rem;
+  font-size: 2rem;
+}
+
+.explorer {
+  background-image: url(./assets/image3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
