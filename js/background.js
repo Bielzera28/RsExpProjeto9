@@ -1,24 +1,26 @@
-const linkHome = document.querySelector("#home")
-const linkUniverse = document.querySelector("#universe")
-const linkExplorer = document.querySelector("#explorer")
+export function Backgrounds({ bgHome, bgUniverse, bgExploration }) {
+  function backgroundHome() {
+    document.body.classList.remove("universe");
+    document.body.classList.remove("exploration");
+    document.body.classList.add("home");
+  }
+  function backgroundUniverse() {
+    document.body.classList.remove("exploration");
+    document.body.classList.remove("home");
+    document.body.classList.add("universe");
+  }
+  function backgroundExploration() {
+    document.body.classList.remove("home");
+    document.body.classList.remove("universe");
+    document.body.classList.add("exploration");
+  }
 
-linkHome.addEventListener("click", () => {
-  document.documentElement.classList.remove("universe");
-  document.documentElement.classList.remove("explorer");
-  document.documentElement.classList.add("home");
-})
-
-linkUniverse.addEventListener("click", () => {
-  document.documentElement.classList.add("universe");
-  document.documentElement.classList.remove("explorer");
-  document.documentElement.classList.remove("home");
-})
-
-linkExplorer.addEventListener("click", () => {
-  document.documentElement.classList.remove("universe");
-  document.documentElement.classList.add("explorer");
-  document.documentElement.classList.remove("home");
-})
+  return {
+    backgroundHome,
+    backgroundUniverse,
+    backgroundExploration,
+  };
+}
 
 
 
