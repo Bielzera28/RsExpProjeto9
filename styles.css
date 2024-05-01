@@ -17,10 +17,11 @@ body {
   background-size: cover;
 }
 
-header {
+nav { 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 32px;
   margin-top: 50px;
 }
 
@@ -28,18 +29,15 @@ img {
   padding: 0 32px 0 70px;
 }
 
-ul li {
+a {
   display: flex;
   font-size: 22px;
   line-height: 40px;
-  gap: 32px;
-}
-
-ul li a {
   color: #c4c4cc;
+  text-decoration: none;
 }
 
-ul li a:hover {
+a:hover {
   font-weight: bold;
   color: #e1e1e6;
   transition: 0.3s ease-in-out;
@@ -52,7 +50,7 @@ h1 {
   margin-bottom: 24px;
 }
 
-main {
+.homePage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +64,7 @@ button {
   text-transform: uppercase;
   padding: 12px 32px;
   gap: 8px;
+  max-width: 300px;
 
   border: 2px solid #ffffff;
   border-radius: 5px;
@@ -76,9 +75,30 @@ button {
 }
 
 button:hover {
-  background: #ffffff;
   color: #02799d;
   font-weight: 700;
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
+
+.universePage, .explorerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 113px 100px;
+}
+
+.universePage h1, .explorerPage h1 {
+  color: #e1e1e6;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.universePage p, .explorerPage p {
+  color: #d9d9da;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 648px;
+}
+
